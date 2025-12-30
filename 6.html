@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+
+    </head>
+    <body>
+        <header>
+        <h1>My goals for the year!</h1>
+        <nav aria-label="primary-navigation">
+            <ul>
+                <li>
+                    <a href="#html">Learn html</a>
+                </li>
+                <li>
+                    <a href="#vacation">Planning a vacation</a> 
+                </li>
+            </ul>
+        </nav>
+        </header>
+        <hr>
+        <main>
+    <article id="html">
+        <h2>I'm Ready to Learn HTML</h1>
+        <p>This is my first webpage</p>
+        <section>
+            <h3>HTML5</h3>
+            <img src="img/htm5.jpeg" alt="HTML5 Logo" title="I am learning HTML5" width="300" height="300">
+            <figure>
+                <figcaption>An example of figure tag without figure having HTML5 Code:</figcaption>
+                <p>
+                    <code>&lt;h1&gt;Hello World!&lt;/h1&gt;</code>
+                </p>
+            </figure>
+        </section>
+        <section>
+            <h3>My Daily Schedule </h3>
+            <p>Let me tell you how:</p>
+            <ol>
+                <li>...I learn more about web dev.</li>
+                <li>...I plan out my schedule.</li>
+                <li>...I use resources from <abbr title="Mozilla Developer Network"><a href="https://developer.mozilla.org/" target="_blank">MDN</a></abbr>.</li>
+            </ol>
+            <aside>
+                <details>
+                    <summary>
+                        Guess the <mark>number of hours</mark> I code per day
+                    </summary>
+                    <p>I start at <time datetime="08:00">8 am</time> and I write code for <time datetime="PT3H">3 hours</time> every morning.
+                    </p>
+                </details>
+            </aside>
+            <br>
+            <table>
+                <caption>My Daily Schedule</caption>
+                <thead>
+                <tr>
+                    <!--id and then giving each td headers having both attributes is not prefered rather scope having single attribute is prefered-->
+                    <th>&nbsp;</th>
+                    <th id="time" scope="col">Time</th>
+                    <th scope="col">Activity</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <th id="Morning" scope="row">Morning</th>
+                    <td headers="time morning">
+                        <time datetime="08:00">8am</time>-<time datetime="11:00">11am</time>
+                    </td>
+                    <td>Write Code</td>
+                </tr>
+                <tr>
+                    <th scope="row">Break</th>
+                    <td>
+                        <time datetime="11:00">11am</time>-<time datetime="12:00">12pm</time>
+                    </td>
+                    <td>Eat Lunch</td>
+                </tr>
+                <tr>
+                    <th scope="row">Afternoon</th>
+                    <td>
+                        <time datetime="12:00">12pm</time>-<time datetime="17:00">5pm</time>
+                    </td>
+                    <td>Study for other courses</td>
+                </tr>
+                <tr>
+                    <th scope="row">Evening</th>
+                    <td rowspan="2">All Other Times</td>
+                    <td>Free Time</td>
+                </tr>
+                <tr>
+                    <th scope="row">Night</th>
+                    <td>Sleep</td>
+                </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <td colspan="3">And that's what I do everyday, 5 days a week!</td>
+                    </tr>
+                </tfoot>
+            </table>
+        </section>
+    </article>
+
+        <hr>
+        
+        <article id="vacation">
+        <h2>I Am Also Planning a Vacation</h2>
+        <p>I've been working hard and <em>really need a getaway.</em></p>
+        <p>I live in <abbr title="Kansas"><a href="https://en.wikipedia.org/wiki/Kansas" target="_blank">KS </a></abbr>so I want to visit a beach.</p>
+
+        <section>
+        <h3>Place I'd Like to Visit</h3>
+        <ul>
+        <li><p>I've heard good things about the Caribbean.</p>
+            <figure>
+                <img src="img/carribean.png" alt="Carribean Beach " title="I want to visit a Caribbean beach." width="400" height="300" loading="lazy">
+                <figcaption>
+                    Caribbean Beach Getaway
+                </figcaption>
+            </figure>
+        </li>
+        <li><p>I've heard good things about going here:</p>
+        <address>Address</address>
+        <figure>
+        <img src="img/vacation.png" alt="Winter Vacation" title="Enjoy Christmas!" width="400" height="300" loading="lazy">
+        <figcaption>
+            Christmas Vacation.Figure tag gives extra indentation in the start of the enclosed image
+        </figcaption>
+        </figure>
+        </li>
+
+        </ul>
+    </section>
+    <section>
+        <!--<div></div> are dividers and mostly used in CSS-->
+        <!--<span><span> mostly used in CSS-->
+        <h3>Place I Want to Avoid</h3>
+        <dl>
+            <dt>North Pole</dt>
+            <dd>I hear this is <strong>cold!</strong></dd>
+
+            <dt>South Pole</dt>
+            <dd>This is also cold.</dd>
+
+            <dt>Mountain Tops</dt>
+            <dd>These are also cold.</dd>
+        </dl>
+    </section>
+    </article>
+        </main>
+        <hr>
+
+      <!--This is how you comment out in html  -->
+      <footer>
+        <p>
+        &lt;&lt;&lt; &copy; <a href="about.html" target="_blank">Prisha Nagpal</a> &gt;&gt;&gt;
+        </p>
+        <p>
+            <a href="#">Back to Top</a>
+        </p>
+        </footer>
+    </body>
+</html>
